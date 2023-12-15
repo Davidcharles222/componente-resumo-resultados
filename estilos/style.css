@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: fonts1;
+    src: url(../assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+
+@font-face {
+    font-family: fonts2;
+    src: url(../assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+@font-face {
+    font-family: fonts3;
+    src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* iniciando projeto */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 550px;
+    height: 380px;
+    display: flex;
+    border-radius: 50px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow:3px 8px 20px 0px rgba(0, 0, 0, 0.097);
+    
+}
+
+.result{
+    padding: 20px;
+    flex: 1 1 0;
+    background-color: rgb(75, 36, 160) ;
+    border-radius: 20px;
+}
+
+.result h2{
+    text-align: center;
+    font-family: fonts1;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.527);
+}
+
+.value-circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2em 0;
+    background-color: blue;
+    margin: auto;
+    background-color: rgb(44, 17, 107);
+    background-image: linear-gradient(to top,rgb(75, 36, 160),rgb(37, 15, 82));
+    margin-bottom: 20px;
+}
+
+.main-value{
+    font-family: fonts3;
+    font-size: 3em;
+    color: white;
+}
+
+.amount{
+    color: grey;
+    font-family: fonts1;
+}
+
+.result h1{
+    text-align: center;
+    font-family: fonts1;
+    color: rgba(255, 255, 255, 0.837);
+    padding-bottom: 20px;
+}
+
+.result .text{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.527);
+}
+
+/* configurando summary */
+
+.summary{
+    padding: 20px;
+    flex: 1 1 0;
+}
+
+.summary h2{
+    font-family: fonts2;
+    color: rgba(0, 0, 0, 0.751);
+    padding-bottom: 20px;
+}
+
+.summary-minicontainer{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 40px;
+    font-family: fonts3;
+
+}
+
+/* configurando as categorias */
+
+.summary .category{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 48%;
+    padding-left: 10px;
+    position: relative;
+}
+
+#item{
+    padding-left: 25px;
+}
+
+.result-value{
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 50px;
+    color: rgb(161, 152, 152);
+}
+
+.summary-minicontainer #negrito{
+    color: rgba(0, 0, 0, 0.885);
+    font-family: fonts3;
+}
+
+/* configurando os icones */
+.summary img{
+    padding-right: 3px;
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    width: 20px;
+}
+
+.reaction-container{
+    background-color: rgba(231, 142, 142, 0.136);
+}
+.reaction{
+    color: rgb(225, 95, 95);
+}
+
+.memory-container{
+    background-color: rgba(221, 221, 170, 0.279);
+}
+.memory{
+    color: rgb(240, 233, 42);
+}
+
+.verbal-container{
+    background-color: rgba(164, 233, 164, 0.197);
+}
+.verbal{
+    color: rgb(51, 157, 51);
+}
+
+.visual-container{
+    background-color: rgba(194, 153, 232, 0.188);
+    margin-bottom: 20px;
+}
+.visual{
+    color: rgb(109, 48, 165);
+}
+
+/* configurando bottom */
+
+.summary button{
+    width: 90%;
+    background-color: rgb(79, 79, 79);
+    display: block;
+    margin: auto;
+    height: 40px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+}
